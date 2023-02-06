@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/plantend"
+
+    android:gravity="center|top"
+    android:orientation="vertical"
+    tools:context=".ui.m03.Setting.SettingFragment">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="5dp"
+        android:background="#CDFFFFFF"
+        android:text="Version"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textF9"
+        android:layout_width="172dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="#CDFFFFFF"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="34sp" />
+
+    <Button
+        android:id="@+id/buttonF9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="F9" />
+
+    <TextView
+        android:id="@+id/textFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="5dp"
+        android:background="#CDFFFFFF"
+        android:text="RESTART MACHINE"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnFF"
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+        android:text="RESTART" />
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".ui.m02.ctrl.CtrlFragment">
+
+    <LinearLayout
+        android:id="@+id/layoutConnect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center|top"
+        android:orientation="vertical">
+
+        <Switch
+            android:id="@+id/switchAuto"
+            android:layout_width="276dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="60dp"
+            android:checked="true"
+            android:enabled="true"
+            android:text="Auto Mode"
+            android:textSize="20sp"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <Switch
+            android:id="@+id/switchLed"
+            android:layout_width="157dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="50dp"
+            android:text="식물 LED"
+            android:textSize="20sp"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="RED"
+            android:textColor="#FF0000"
+            android:textSize="20sp" />
+
+        <SeekBar
+            android:id="@+id/sbRed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:max="255" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="GREEN"
+            android:textColor="#00FF00"
+            android:textSize="20sp" />
+
+        <SeekBar
+            android:id="@+id/sbGreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:max="255" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="BLUE"
+            android:textColor="#0000FF"
+            android:textSize="20sp" />
+
+        <SeekBar
+            android:id="@+id/sbBlue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:max="255" />
+
+        <TextView
+            android:id="@+id/txtRGB"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:background="#000000"
+            android:gravity="center"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/disconnected"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible" />
+
+</FrameLayout>
